@@ -46,7 +46,7 @@ void setMotor(int pwmPin, int dirPin, int speed, bool reverse) {
 } 
 
 void setup() { 
-  Serial.begin(115200); 
+  Serial.begin(921600); 
   Serial.println("Robot Base Code Started"); 
 
   pinMode(left_DIR, OUTPUT); 

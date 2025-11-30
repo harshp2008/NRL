@@ -26,7 +26,7 @@ void setup() {
   pinMode(right_PWM, OUTPUT);
   pinMode(LED_BUILTIN, OUTPUT);
 
-  Serial.begin(115200);
+  Serial.begin(921600);
   Serial.println("Starting DC Motor Test...");
 }
 

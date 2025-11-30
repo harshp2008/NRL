@@ -19,7 +19,7 @@ int MAX_ANGLE = 120;  // maximum angle
 int currentAngle = MIN_ANGLE;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(921600);
   myServo.attach(14); // Attach servo to pin 14
   Serial.println("Servo Test: Moving from MIN to MAX");
 }
