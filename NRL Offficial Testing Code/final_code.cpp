@@ -12,6 +12,8 @@ const int left_PWM  = 33;
 const int right_DIR = 25; 
 const int right_PWM = 26; 
 
+const String PS5_MAC_ADDRESS = "50:EE:32:D9:71:37";
+
 // Motor direction inversion (adjust if motors run backward) 
 bool reverseLeftMotor  = false; 
 bool reverseRightMotor = true; 
@@ -60,7 +62,7 @@ void setup() {
   armServo.write(ARM); 
   gripperServo.write(GRIPPER); 
 
-  ps5.begin("10:18:49:4D:07:E1"); 
+  ps5.begin(PS5_MAC_ADDRESS.c_str()); 
   Serial.println("Waiting for PS5 Controller..."); 
 } 
 
